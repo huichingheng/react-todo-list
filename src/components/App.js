@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import "./App.css";
-import TodoList from "./TodoList.js"
-
+import TodoList from "./TodoList.js";
+import HelloWorld from "./HelloWorld";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <TodoList title="home todos" todos={["eat", "sleep", "play"]} />
-        <TodoList title="work todos" todos={["play", "sleep", "eat"]} />
+        <HelloWorld />
+        <TodoList title="Home Todos" todos={["eat", "sleep", "play", "code"]} />
+        <TodoList title="Work Todos" todos={["html", "css", "javascript", "react"]}
+        />
       </div>
     );
   }

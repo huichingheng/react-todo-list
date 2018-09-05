@@ -1,12 +1,12 @@
 import React from 'react';
-import {Title} from "./Title.js"
+import Title from "./Title.js"
 import Todo from "./Todo.js"
 
 const TodoList = props => {
-    console.log(props.title);
+    // console.log(props.title);
     return (
       <div>
-        <Title name={props.title} />
+        <Title title={props.title} />
         <ul>
           {props.todos.map((todo, i) => {
             return <Todo key={i} todo={todo} />;

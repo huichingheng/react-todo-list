@@ -1,6 +1,7 @@
 import React from 'react';
 
-export const Title = props => {
-    return <h1>{props.name}</h1>;
+const Title = props => {
+    return <h2>{props.title}</h2>;
   };
   
+  export default Title
